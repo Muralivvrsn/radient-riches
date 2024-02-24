@@ -4,6 +4,7 @@ import Button from "./utils/Button";
 import Tag from "./utils/Tag";
 import Rating from "./utils/Rating";
 import ImageTitle from "./utils/ImageTitle";
+import { StaticImageData } from "next/image";
 import Id from "./utils/Id";
 import Highlights from "./utils/Highlights";
 interface HighLightPoint {
@@ -12,11 +13,12 @@ interface HighLightPoint {
 }
 interface Tag {
   content: string;
-  image: string;
+  image: StaticImageData;
 }
 
 interface Reasons {
   title: string;
+  reasons: string[];
 }
 interface Item {
   id: number;
@@ -24,12 +26,12 @@ interface Item {
   title: string;
   description: string;
   highLightDescription?: string;
-  highLightPoints?: HighLightPoint;
+  highLightPoints?: HighLightPoint[];
   rating: number;
   review: string;
   name: string;
   reasons?: Reasons;
-  icon: string;
+  icon: StaticImageData;
 }
 
 interface CardProps {
@@ -47,7 +49,7 @@ export default function Card({ item }: CardProps) {
           <Highlights
             highLightDescription={item.highLightDescription}
             highLightPoints={item.highLightPoints}
-            reasons={item.reasons ? item.reasons : null}
+            reasons={item.reasons}
           />
         </div>
         <div className="flex flex-col justify-between pb-[10px] items-center w-1/5 ml-[20px]">

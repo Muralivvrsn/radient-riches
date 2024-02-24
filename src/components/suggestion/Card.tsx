@@ -1,12 +1,14 @@
 
 import Image from 'next/image'
+import { StaticImageData } from "next/image";
+
  interface Item {
     title: string;
     description: string;
     originalPrice:number;
     discount:number;
     discountPrice:number;
-    image:string;
+    image:StaticImageData;
   }
   
   interface CardProps {

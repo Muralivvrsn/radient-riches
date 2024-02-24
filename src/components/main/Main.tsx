@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import icon from "../../assessts/cupImage.png";
 import diamondIcon from "../../assessts/diamond.svg";
 import cupIcon from "../../assessts/cup.svg";
+
 export default function Main() {
   const data = [
     {

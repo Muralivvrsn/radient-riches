@@ -1,7 +1,26 @@
 import showmoreIcon from "../../../assessts/showmore.svg";
 import doneIcon from "../../../assessts/done1.svg";
-import Image from 'next/image'
-export default function Highlights({highLightDescription,highLightPoints,reasons}) {
+import Image from "next/image";
+interface HighLightPoint {
+  rating: number;
+  concept: string;
+}
+
+interface Reasons {
+  title: string;
+  reasons: string[];
+}
+
+interface HighlightsProps {
+  highLightDescription?: string;
+  highLightPoints?: HighLightPoint[] ;
+  reasons?: Reasons ;
+}
+export default function Highlights({
+  highLightDescription,
+  highLightPoints,
+  reasons,
+}: HighlightsProps) {
   return (
     <div className="flex flex-col gap-[8px]">
       <div className="text-[16px] font-bold text-[#2C384A]">
@@ -32,7 +51,7 @@ export default function Highlights({highLightDescription,highLightPoints,reasons
             {reasons.title}
           </div>
           <ul className="grid gap-[5px] text-[15px] text-[#4B5665] items-center">
-            {reasons.reasons.map((item,index) => (
+            {reasons.reasons.map((item, index) => (
               <li className="flex gap-[8px]" key={index}>
                 <Image src={doneIcon} alt="D" />
                 <span>{item}</span>
