@@ -52,7 +52,7 @@ export default function Card({ item }: CardProps) {
             reasons={item.reasons}
           />
         </div>
-        <div className="flex flex-col justify-between pb-[10px] items-center w-1/5 ml-[20px]">
+        <div className="flex flex-col justify-between pb-[10px] w-[232px] items-center ml-[20px]">
           <Rating rating={item.rating} review={item.review} />
           <Button />
         </div>
