@@ -28,7 +28,7 @@ export default function Navbar() {
         </li>
         <li className="leading-5">Categories</li>
         <li className="leading-5">Website Builders</li>
-        <li className="leading-5">Today`&apos;`s deals</li>
+        <li className="leading-5">Today&apos;s deals</li>
       </ul>
     </div>
   );
