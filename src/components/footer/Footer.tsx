@@ -32,7 +32,7 @@ export default function Footer(){
                 </div>
             <div className='flex flex-grow text-[#B6BDC4] text-[13px] gap-[8px]  h-fit mt-[50px]'>
                 <div>United states</div>
-                <Image src={dropdownIcon}/>
+                <Image src={dropdownIcon} alt="D"/>
             </div> 
         </div>
 

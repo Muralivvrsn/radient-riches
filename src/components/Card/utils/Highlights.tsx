@@ -32,9 +32,9 @@ export default function Highlights({highLightDescription,highLightPoints,reasons
             {reasons.title}
           </div>
           <ul className="grid gap-[5px] text-[15px] text-[#4B5665] items-center">
-            {reasons.reasons.map((item) => (
-              <li className="flex gap-[8px]">
-                <Image src={doneIcon} />
+            {reasons.reasons.map((item,index) => (
+              <li className="flex gap-[8px]" key={index}>
+                <Image src={doneIcon} alt="D" />
                 <span>{item}</span>
               </li>
             ))}
@@ -43,7 +43,7 @@ export default function Highlights({highLightDescription,highLightPoints,reasons
       )}
       <div className="text-[#1B88F4] mt-[20px] flex justify-start items-center gap-[5px]">
         <div>Show more</div>
-        <Image src={showmoreIcon} />
+        <Image src={showmoreIcon} alt="S" />
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export default function Card({item}:CardProps){
 
     return(
         <div className="flex-grow border flex justify-center items-center flex-col p-[25px]">
-            <Image src={item.image} className="py-[30px]"/>
+            <Image src={item.image} className="py-[30px]" alt="I"/>
             <div className="flex flex-col gap-[12px] text-[14px]">
                 <div className="text-[#074786] text-[14px] font-normal flex items-center gap-[10px]">
                     <div className="py-[4px]  px-[8px] rounded bg-[#F2F4F7] text-[13px]">
