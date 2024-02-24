@@ -1,6 +1,6 @@
 "use client";
 import Description from "./utils/Description";
-import Button from './utils/Button';
+import Button from "./utils/Button";
 import Tag from "./utils/Tag";
 import Rating from "./utils/Rating";
 import ImageTitle from "./utils/ImageTitle";
@@ -14,21 +14,22 @@ interface Tag {
   content: string;
   image: string;
 }
+
 interface Reasons {
   title: string;
 }
 interface Item {
   id: number;
-  tag?: Tag[];
+  tag?: Tag;
   title: string;
   description: string;
   highLightDescription?: string;
-  highLightPoints?: HighLightPoint[];
+  highLightPoints?: HighLightPoint;
   rating: number;
   review: string;
   name: string;
-  reasons?: Reasons[];
-  icon:string;
+  reasons?: Reasons;
+  icon: string;
 }
 
 interface CardProps {
@@ -38,9 +39,7 @@ export default function Card({ item }: CardProps) {
   return (
     <>
       <div className="flex w-full shadow-custom  pr-[25px] pb-[10px] relative rounded-xl">
-        {item.tag && (
-         <Tag image={item.tag.image} content={item.tag.content} />
-        )}
+        {item.tag && <Tag image={item.tag.image} content={item.tag.content} />}
         <Id id={item.id} />
         <ImageTitle icon={item.icon} name={item.name} />
         <div className="flex flex-col flex-grow gap-[8px] justify-between pt-[20px] px-[20px] leading-normal w-3/5 ">
