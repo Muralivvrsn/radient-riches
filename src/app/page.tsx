@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#FBFCFD] text-black">
       <Navbar/>
-      <div className="px-[200px] pt-[40px] items-center">
-      <Header/>
-      <Filter/>
-      <ChildNav/>
-      <BreadCrumb/>
-      <Main/>
-      <Suggestion/>
+      <div className="px-4 sm:px-10 md:px-20 lg:px-40 xl:px-[200px] pt-[40px] items-center">
+        <Header/>
+        <Filter/>
+        <ChildNav/>
+        <BreadCrumb/>
+        <Main/>
+        <Suggestion/>
       </div>
       <Footer/>
     </main>

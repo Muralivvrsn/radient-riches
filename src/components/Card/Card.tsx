@@ -40,11 +40,11 @@ interface CardProps {
 export default function Card({ item }: CardProps) {
   return (
     <>
-      <div className="flex w-full shadow-custom  pr-[25px] pb-[10px] relative rounded-xl">
+      <div className="flex flex-col sm:flex-row w-full shadow-custom pr-4 sm:pr-6 md:pr-[25px] pb-2 sm:pb-4 md:pb-[10px] relative rounded-xl">
         {item.tag && <Tag image={item.tag.image} content={item.tag.content} />}
         <Id id={item.id} />
         <ImageTitle icon={item.icon} name={item.name} />
-        <div className="flex flex-col flex-grow gap-[8px] justify-between pt-[20px] px-[20px] leading-normal w-3/5 ">
+        <div className="flex flex-col gap-2 sm:gap-3 md:gap-[8px] justify-between pt-4 sm:pt-[15px] md:pt-[20px] px-4 sm:px-5 md:px-[20px] leading-normal w-full md:w-3/5">
           <Description title={item.title} description={item.description} />
           <Highlights
             highLightDescription={item.highLightDescription}
@@ -52,7 +52,7 @@ export default function Card({ item }: CardProps) {
             reasons={item.reasons}
           />
         </div>
-        <div className="flex flex-col justify-between pb-[10px] w-[232px] items-center ml-[20px]">
+        <div className="flex flex-col justify-between pb-2 sm:pb-4 md:pb-[10px] w-full sm:w-[200px] md:w-[232px] items-center mx-4 sm:mx-0 sm:ml-[20px]">
           <Rating rating={item.rating} review={item.review} />
           <Button />
         </div>
