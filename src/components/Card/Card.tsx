@@ -40,7 +40,7 @@ interface CardProps {
 export default function Card({ item }: CardProps) {
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-full shadow-custom pr-4 sm:pr-6 md:pr-[25px] pb-2 sm:pb-4 md:pb-[10px] relative rounded-xl">
+      <div className="bg-white flex flex-col sm:flex-row w-full shadow-custom pr-4 md:flex-row sm:pr-6 md:pr-[25px] pb-2 sm:pb-4 md:pb-[10px] relative rounded-xl">
         {item.tag && <Tag image={item.tag.image} content={item.tag.content} />}
         <Id id={item.id} />
         <ImageTitle icon={item.icon} name={item.name} />

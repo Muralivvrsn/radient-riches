@@ -16,7 +16,7 @@ interface CardProps {
 
 export default function Card({ item }: CardProps) {
   return (
-    <div className="w-[350px] m-auto border flex justify-center items-center flex-col p-6 md:p-[25px]">
+    <div className="flex-grow shadow-custom bg-white m-auto flex justify-center items-center flex-col p-6 md:p-[25px]">
       <Image src={item.image} alt="I" width={150} height={150} className="py-8" />
       <div className="flex flex-col gap-3 text-sm md:text-[14px]">
         <div className="text-[#074786] font-normal flex items-center gap-2 md:gap-[10px]">
