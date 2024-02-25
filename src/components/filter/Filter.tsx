@@ -1,8 +1,8 @@
-'use client'
-import Image from 'next/image';
-import doneIcon from '../../assets/done.svg' 
-import noteIcon from '../../assets/note.svg' 
-import dropdownIcon from '../../assets/dropdown.svg' 
+"use client";
+import Image from "next/image";
+import doneIcon from "../../assets/done.svg";
+import noteIcon from "../../assets/note.svg";
+import dropdownIcon from "../../assets/dropdown.svg";
 
 export default function Filter() {
   return (
@@ -22,5 +22,5 @@ export default function Filter() {
         <Image src={dropdownIcon} alt="Dropdown icon" width={20} height={20} />
       </div>
     </div>
-  )
+  );
 }
