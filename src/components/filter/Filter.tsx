@@ -17,7 +17,7 @@ export default function Filter() {
         <Image src={noteIcon} alt="Note icon" width={20} height={20} />
         <div>Advertising Disclosure</div>
       </div>
-      <div className="flex gap-2 sm:gap-[8px] items-center">
+      <div className="flex gap-2 sm:gap-[8px] items-center cursor-pointer">
         <div>Top Relevant</div>
         <Image src={dropdownIcon} alt="Dropdown icon" width={20} height={20} />
       </div>

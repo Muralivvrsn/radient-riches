@@ -8,23 +8,23 @@ export default function Footer() {
       <div className="flex-grow flex flex-col gap-[13px]">
         <div className="text-[16px]">Categories</div>
         <ul className="list-none text-[#B6BDC4] text-[13px] flex flex-col gap-[20px]">
-          <li>Web Builder</li>
-          <li>Hosting</li>
-          <li>Data Center</li>
-          <li>Robotic-Automation</li>
+          <li className="cursor-pointer">Web Builder</li>
+          <li className="cursor-pointer">Hosting</li>
+          <li className="cursor-pointer">Data Center</li>
+          <li className="cursor-pointer">Robotic-Automation</li>
         </ul>
       </div>
       <div className="flex-grow flex flex-col gap-[13px] mt-10 lg:mt-0">
         <div className="text-[16px]">Contact</div>
         <ul className="list-none text-[#B6BDC4] text-[13px] flex flex-col gap-[20px]">
-          <li>Contact</li>
-          <li>Hosting</li>
-          <li>Privacy Policy</li>
-          <li>Categories</li>
-          <li>About</li>
+          <li className="cursor-pointer">Contact</li>
+          <li className="cursor-pointer">Hosting</li>
+          <li className="cursor-pointer">Privacy Policy</li>
+          <li className="cursor-pointer">Categories</li>
+          <li className="cursor-pointer">About</li>
         </ul>
       </div>
-      <div className='flex flex-grow text-[#B6BDC4] text-[13px] gap-[8px] items-center mt-10 lg:mt-[50px]'>
+      <div className='flex flex-grow text-[#B6BDC4] text-[13px] gap-[8px] items-center mt-10 lg:mt-[50px] cursor-pointer'>
         <div>United States</div>
         <Image src={dropdownIcon} alt="Dropdown" width={20} height={20} />
       </div>

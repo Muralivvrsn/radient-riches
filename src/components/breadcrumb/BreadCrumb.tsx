@@ -11,7 +11,7 @@ export default function BreadCrumb() {
           {index !== 0 && (
             <Image src={arrowIcon} alt="f" />
           )}
-          <span>{item}</span>
+          <span className='cursor-pointer'>{item}</span>
         </div>
       ))}
     </div>
