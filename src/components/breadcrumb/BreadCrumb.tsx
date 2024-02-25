@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image'
 import { useState } from 'react';
-import arrowIcon from '../../assessts/arrow.svg'
+import arrowIcon from '../../assets/arrow.svg'
 export default function BreadCrumb() {
   const [list, setList] = useState(["Home", "Hosting for all", "Hosting", "Hosting6", "Hosting5"]);
   return (

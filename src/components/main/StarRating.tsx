@@ -1,7 +1,7 @@
 'use client'
-import fullStarIcon from '../../assessts/fullstar.svg'
-import halfStarIcon from '../../assessts/halfstar.svg'
-import emptyStarIcon from '../../assessts/emptystar.svg'
+import fullStarIcon from '../../assets/fullstar.svg'
+import halfStarIcon from '../../assets/halfstar.svg'
+import emptyStarIcon from '../../assets/emptystar.svg'
 import Image from 'next/image'
 interface StarRatingProps {
     rating: number;
