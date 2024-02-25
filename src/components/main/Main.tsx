@@ -40,7 +40,7 @@ export default function Main() {
       title: "WixPro 72-Inch Responsive Website Builder",
       description: "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
       highLightDescription: "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
-      rating: 9.8,
+      rating: 9.3,
       icon: icon,
       review: "Exceptional",
     },
@@ -64,7 +64,7 @@ export default function Main() {
           concept: "Docs",
         },
       ],
-      rating: 9.1,
+      rating: 9.0,
       review: "Very good",
       reasons: {
         title: "Why we love it",

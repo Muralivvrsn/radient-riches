@@ -7,10 +7,12 @@ interface StarRatingProps {
     rating: number;
   }
   export default function StarRating({ rating }: StarRatingProps) {
-    const normalizedRating = rating / 2;
-    const fullStars = Math.floor(normalizedRating);
-    const halfStars = normalizedRating % 1 >= 0.5 ? 1 : 0;
-    const emptyStars = 5 - fullStars - halfStars;
+    const integralPart = Math.floor(rating); 
+    const decimalPart = Number((rating % 1).toFixed(1)); 
+    const fullStars = Math.floor(integralPart/2) + (decimalPart >= 0.6 ?1:0);
+    const halfStars = decimalPart < 0.6 && decimalPart >0.0?1:0
+    const emptyStars = decimalPart == 0 && rating <10 ?5-fullStars-halfStars:0
+        
     const stars = [];
   
     for (let i = 0; i < fullStars; i++) {
